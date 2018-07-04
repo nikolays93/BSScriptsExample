@@ -85,6 +85,8 @@ $add = array(
     <?
     $collapses[0]['id'] = 'example4';
     $collapses[1]['id'] = 'example5';
+    unset( $collapses[0]['paneClass'] );
+    unset( $collapses[1]['paneClass'] );
 
     $Tabs = new Tabs( $collapses );
     $Tabs->render();
