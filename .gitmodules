@@ -1,0 +1,3 @@
+[submodule "vendor/BSScripts"]
+	path = vendor/BSScripts
+	url = https://github.com/nikolays93/BSScripts.git
