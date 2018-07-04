@@ -2,9 +2,11 @@
 
 use BSScripts\Collapse;
 use BSScripts\Tabs;
+use BSScripts\Accordion;
 
 include (__DIR__ . '/vendor/BSScripts/Collapse.php');
 include (__DIR__ . '/vendor/BSScripts/Tabs.php');
+include (__DIR__ . '/vendor/BSScripts/Accordion.php');
 
 $collapses = array(
     /**
@@ -87,6 +89,17 @@ $add = array(
     $Tabs = new Tabs( $collapses );
     $Tabs->render();
     ?>
+
+    <h2 style="margin-top: 30px;">Accordion</h2>
+    <div id="accordion"> <!-- wrapper as for data-parent -->
+    <?
+    $collapses[0]['id'] = 'example6';
+    $collapses[1]['id'] = 'example7';
+
+    $Accordion = new Accordion( $collapses );
+    $Accordion->render();
+    ?>
+    </div>
   </div>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -*remove me*->
